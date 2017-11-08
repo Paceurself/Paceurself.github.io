@@ -65,9 +65,18 @@
                 font-size: 1.25em;
             }
         </style>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script>
+             $(document).ready(function(){
+                  $("button").click(function(){
+                  $("ul.professional-interests").fadeToggle();
+              });
+             });
+        </script>
     </head>
     <body>
         <div id="all-contents">
+            
         </div>
         <nav>
             <header>Payce's Amazing Website!</header>
@@ -111,6 +120,19 @@
                 
                 
             </section>
+            </div>
+        </main>
+        <main>
+            <div class="content">
+                <header>Professional Interests</header>
+                <section class="interests">
+             <button>Use me to see my professional interests</button>
+             <ul class="professional-interests">
+                <li>Computer Science</li>
+                <li>Bot Developing</li>
+                <li>Javascript and Python</li>
+            </ul>
+        </section>
             </div>
         </main>
     </body>
